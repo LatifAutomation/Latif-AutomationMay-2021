@@ -1,0 +1,13 @@
+package PageFactory;
+
+import org.testng.annotations.Test;
+
+public class MainClass1Test 
+{
+  @Test
+  public void login() 
+  {
+	  
+	  
+  }
+}

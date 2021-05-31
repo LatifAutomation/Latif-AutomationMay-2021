@@ -1,0 +1,33 @@
+package TestNGPackage;
+
+import org.testng.annotations.Test;
+
+public class FirstTest
+{
+	
+	@Test
+	public void first()
+	{
+		System.out.println(" I am in First Test case");
+
+	
+}
+	
+	@Test
+	public void second()
+	{
+		System.out.println("I am in Second Test Case");
+	}
+	
+	
+	
+	@Test
+	public void third()
+	{
+		System.out.println("I am in third Test Case");
+	}
+	
+}
+
+
+

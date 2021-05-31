@@ -1,0 +1,23 @@
+package Locators;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class CSSSelector {
+
+	public static void main(String[] args) 
+	{
+		FirefoxDriver driver=new FirefoxDriver();
+		
+		driver.get("file:///D:/HTML%20Code/CSSSelector.html");
+		
+		driver.manage().window().maximize();
+		
+		//First name
+		
+		driver.findElement(By.cssSelector("input[id='fname']")).sendKeys("Mahesh");
+		
+
+	}
+
+}

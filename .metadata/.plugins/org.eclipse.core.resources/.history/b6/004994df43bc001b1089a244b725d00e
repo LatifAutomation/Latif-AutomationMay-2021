@@ -1,0 +1,63 @@
+package PageObjectModel;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class CreateAccount
+{
+
+	private WebElement creteacc;
+	
+	private WebElement fname;
+	
+	private WebElement sname;
+	private WebElement mobile;
+	
+	private WebElement pass;
+	
+	
+	//Initialization
+	
+	public CreateAccount(WebDriver driver)
+	{
+		
+		creteacc=driver.findElement(By.xpath("/html/body/div[1]/div[2]/div[1]/div/div/div/div[2]/div/div[1]/form/div[5]/a/text()"));
+		
+		fname=driver.findElement(By.xpath("/html/body/div[3]/div[2]/div/div/div[2]/div/div/div[1]/form/div[1]/div[1]/div[1]/div[1]/div/input"));
+		sname=driver.findElement(By.xpath("/html/body/div[3]/div[2]/div/div/div[2]/div/div/div[1]/form/div[1]/div[1]/div[1]/div[2]/div/div[1]/input"));
+		
+		mobile=driver.findElement(By.xpath("/html/body/div[3]/div[2]/div/div/div[2]/div/div/div[1]/form/div[1]/div[2]/div/div[1]/input"));
+		
+	}
+	
+	
+	//utilizatiuon
+	
+	
+	public void CraeteAccountClick()
+	{
+		creteacc.click();
+	}
+	
+	
+	public void firstName()
+	{
+		fname.sendKeys("Test");
+		
+	}
+	
+	public void lastName()
+	{
+		sname.sendKeys("Automation");
+		
+	}
+	
+	public void mobileNo()
+	{
+		mobile.sendKeys("9874563210");
+		
+	}
+	
+	
+}

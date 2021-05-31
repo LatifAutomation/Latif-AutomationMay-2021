@@ -1,0 +1,40 @@
+package PageObjectModel;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class MainClass {
+
+	public static void main(String[] args)
+	{
+		
+		WebDriver driver=new ChromeDriver();
+		
+		driver.get("https://www.facebook.com/");
+		
+		driver.manage().window().maximize();
+		
+		
+		//LoginPage
+		
+		
+	/*	LoginClass log=new LoginClass(driver);
+		
+		log.username();
+		log.password();
+		log.loginClick();
+		//log.forgpassword();
+		*/
+		
+		CreateAccount ca=new CreateAccount(driver);
+		
+		ca.CraeteAccountClick();
+		ca.firstName();
+		ca.lastName();
+		ca.mobileNo();
+		
+		
+		
+	}
+
+}

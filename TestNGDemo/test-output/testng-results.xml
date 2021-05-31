@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="73" started-at="2021-05-28T02:38:27Z" finished-at="2021-05-28T02:38:27Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="73" started-at="2021-05-28T02:38:27Z" finished-at="2021-05-28T02:38:27Z">
+      <class name="TestPackage.NewTest2">
+        <test-method status="PASS" signature="five()[pri:-1, instance:TestPackage.NewTest2@174d20a]" name="five" duration-ms="22" started-at="2021-05-28T08:08:27Z" finished-at="2021-05-28T08:08:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- five -->
+        <test-method status="PASS" signature="fourth()[pri:0, instance:TestPackage.NewTest2@174d20a]" name="fourth" duration-ms="4" started-at="2021-05-28T08:08:27Z" finished-at="2021-05-28T08:08:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fourth -->
+        <test-method status="PASS" signature="third()[pri:0, instance:TestPackage.NewTest2@174d20a]" name="third" duration-ms="3" started-at="2021-05-28T08:08:27Z" finished-at="2021-05-28T08:08:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- third -->
+        <test-method status="PASS" signature="second()[pri:0, instance:TestPackage.NewTest2@174d20a]" name="second" duration-ms="3" started-at="2021-05-28T08:08:27Z" depends-on-methods="TestPackage.NewTest2.fourth" finished-at="2021-05-28T08:08:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- second -->
+        <test-method status="PASS" signature="first()[pri:0, instance:TestPackage.NewTest2@174d20a]" name="first" duration-ms="3" started-at="2021-05-28T08:08:27Z" depends-on-methods="TestPackage.NewTest2.third" finished-at="2021-05-28T08:08:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- first -->
+      </class> <!-- TestPackage.NewTest2 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

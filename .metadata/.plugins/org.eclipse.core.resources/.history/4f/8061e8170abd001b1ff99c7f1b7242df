@@ -1,0 +1,27 @@
+package PageFactory;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class MainClass1 {
+
+	public static void main(String[] args) 
+	{
+		WebDriver driver=new ChromeDriver();
+		
+		driver.get("https://www.facebook.com/");
+		
+		driver.manage().window().maximize();
+		
+		
+		Login log=new Login(driver);
+		
+		log.username();
+		log.password();
+		log.loginClick();
+		//log.forgoClick();
+		
+		
+	}
+
+}

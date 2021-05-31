@@ -1,0 +1,15 @@
+package TestNGPackage;
+
+import org.testng.annotations.Test;
+
+public class Annotations {
+  
+	
+	@Test
+	public void test()
+	{
+		
+		System.out.println(" I am in Test case");
+	}
+	
+}

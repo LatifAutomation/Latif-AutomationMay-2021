@@ -1,0 +1,23 @@
+package Locators;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class PartialLinkText2 {
+
+	public static void main(String[] args)
+	{
+		FirefoxDriver driver=new FirefoxDriver();
+		
+		driver.get("https://www.browserstack.com/users/sign_in");
+		
+		driver.manage().window().maximize();
+		
+		//Click on Forgot Password Link
+		
+		driver.findElement(By.partialLinkText("fo")).click();
+		
+		
+	}
+
+}

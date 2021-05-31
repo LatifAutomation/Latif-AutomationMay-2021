@@ -1,0 +1,49 @@
+package TestNGPackage;
+
+import org.testng.annotations.Test;
+
+public class DependOnMethods
+{
+  
+	@Test
+	public void login() 
+	{
+		
+		System.out.println("Application Login successfully");
+	}
+	
+	
+	@Test
+	public void serachProduct()
+	{
+		System.out.println(" Product Search successfully");
+	}
+	
+	
+	@Test
+	public void purchase()
+	{
+		System.out.println("Product purchased successfully ");
+	}
+	
+	
+	@Test
+	public void amountTransafer()
+	{
+		System.out.println("Amount transferred succesfully");
+	}
+	
+	
+	@Test
+	public void reportGenerGenerte()
+	{
+		System.out.println(" Report Generated");
+	}
+	
+	
+	@Test
+	public void logout()
+	{
+		System.out.println(" Logout successfully");
+	}
+}

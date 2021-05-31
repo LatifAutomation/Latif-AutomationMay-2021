@@ -1,0 +1,9 @@
+package PageFactory;
+
+import org.testng.annotations.Test;
+
+public class TestNGCLass {
+  @Test
+  public void f() {
+  }
+}

@@ -1,0 +1,26 @@
+package Locators;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class RelativeXpath2 {
+
+	public static void main(String[] args)
+	{
+
+       FirefoxDriver driver=new FirefoxDriver();
+       
+       driver.get("https://touch.facebook.com/?_rdr");
+       
+       driver.manage().window().maximize();
+       
+       
+       //Mobile no or email ID
+       
+       
+       driver.findElement(By.xpath(" //input[@name='email']")).sendKeys("7896541230");
+		
+
+	}
+
+}

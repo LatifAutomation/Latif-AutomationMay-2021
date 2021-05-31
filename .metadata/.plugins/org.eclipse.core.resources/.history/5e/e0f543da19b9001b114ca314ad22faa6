@@ -1,0 +1,42 @@
+package ActionsClass;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+
+public class MoveToElement {
+
+	public static void main(String[] args)
+	{
+		
+		WebDriver driver=new ChromeDriver();
+		
+		driver.get("https://www.fatcow.com/");
+		
+		driver.manage().window().maximize();
+		
+		
+		//Identify the element
+		
+		
+		WebElement ele = driver.findElement(By.xpath("//*[@id='nav-container']/ul/li[5]/a"));
+		
+		
+		// Create the object of Actions class
+		
+		
+		Actions act=new Actions(driver);
+		
+		
+		//Perform the action
+		
+		act.moveToElement(ele).build().perform();
+		
+		
+		
+
+	}
+
+}
