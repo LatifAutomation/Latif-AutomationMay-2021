@@ -5,17 +5,20 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class RelativeXpath {
 
-	public static void main(String[] args) 
+	public static void main(String[] args)
 	{
 		ChromeDriver driver=new ChromeDriver();
-		driver.get("file:///C:/Users/pc/Desktop/Automation%20Assignment/AbsoluteXpath.html");
+		
+		driver.get("file:///C:/Users/pc/Desktop/HTML3/Absolutexpath3.html");
+		
 		driver.manage().window().maximize();
+		// First name
 		
-		//First Name
-		driver.findElement(By.xpath("//div[1]/input[1]")).sendKeys("Manual");
+		driver.findElement(By.xpath("//div[1]/input[1]")).sendKeys("My first Name");
+		
+		//link2
+		driver.findElement(By.xpath("//div[2]/a[2]")).click();
 
-		driver.findElement(By.xpath("//div[2]/a[1]")).click();
-		
 	}
 
 }

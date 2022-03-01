@@ -7,14 +7,20 @@ public class XpathByAttribute {
 
 	public static void main(String[] args) 
 	{
-		ChromeDriver driver=new ChromeDriver();
-		driver.get("https://www.facebook.com/");
-		driver.manage().window().maximize();
-		//Email Address
-		
-		driver.findElement(By.xpath("//input[@id='email']")).sendKeys("test@gmail.com");
-		driver.findElement(By.xpath("//input[@name='pass']")).sendKeys("Test@1234");
-        driver.findElement(By.xpath("//button[@name='login']")).click();
+	ChromeDriver driver=new ChromeDriver();
+	driver.get("https://www.amazon.in/");
+	
+	driver.manage().window().maximize();
+	
+	 
+	//Search input
+	
+	driver.findElement(By.xpath("//input[@id='twotabsearchtextbox']")).sendKeys("Mobie");
+	
+	//Search button click
+	
+	driver.findElement(By.xpath("//input[@type='submit']")).click();
+	
 	}
 
 }
